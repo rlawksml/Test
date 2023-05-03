@@ -1,0 +1,46 @@
+<!--
+   O 1. 위처럼 4분할 화면이 필요함
+   O 2. 4분할 위에 검색창이 들어갈 수 있는 공간이 있어야 함. 이건 후에 공간을 넣으면 될 듯
+   O 3. 4분할된 창마다 최소화, 최대화가 있어야 함.
+        3-1 최대화 >> 4분할이 1분할
+        3-2 최소화 4분할 >> 1분할
+   X 4. 분할 화면 스크롤 안 생기고 최적화 >> 분활 화면 반응형으로 바꿔 넘기게 하기 media
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    
+    <form class="input-container" action="submit">
+    <input type="text">
+    <button >검색</button>
+    </form>
+    <div id="grid-container" class="grid-container">
+        <div class="grid-item" id="item1">
+            <button onclick="(e)=>{}" class="controlBtn minimize" attr-max="">최대화</button>
+          <iframe
+          src="https://jebo.io/home" ></iframe>
+        </div>
+        <div class="grid-item" id="item2">
+            <button onclick="(e)=>{}" class="controlBtn minimize" attr-max="">최대화</button>
+            <iframe src="https://daum.net/"></iframe>
+        </div>
+        <div class="grid-item" id="item3">
+            <button onclick="(e)=>{}" class="controlBtn minimize" attr-max="">최대화</button>
+          <iframe src="https://map.kakao.com//"></iframe>
+        </div>
+        <div class="grid-item" id="item4">
+            <button onclick="(e)=>{}" class="controlBtn minimize" attr-max="">최대화</button>
+          <iframe src="https://tv.kakao.com/"></iframe>
+        </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
